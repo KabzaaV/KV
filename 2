@@ -1,0 +1,21 @@
+Html:
+<html>
+<body>
+<form method="post" action="lab2.php">
+<input type="number" name="n1" placeholder="enter first number">
+<input type="submit">
+</form>
+</body>
+</html>
+
+
+Php:
+<?php
+$n1=$_POST["n1"];
+$fact=1;
+for($i=$n1;$i>=1;$i--)
+{
+$fact=$fact*$i;
+}
+echo "Factorial of $n1:$fact";
+?>
