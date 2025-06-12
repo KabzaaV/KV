@@ -1,0 +1,25 @@
+Html:
+<html>
+<body>
+<form method="post" action="lab3.php">
+<input type="number" name="n1" placeholder="enter First number">
+<input type="submit">
+</form>
+</body>
+</html>
+
+
+Php:
+<?php
+$num=$_POST["n1"];
+$rev=0;
+$sum=0;
+while($num>1)
+{
+$rem=$num%10;
+$sum=$sum+$rem;
+$rev=($rev*10)+$rem;
+$num=$num/10;
+}
+echo "reverse=$rev<br>sum=$sum";
+?>
