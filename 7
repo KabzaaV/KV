@@ -1,0 +1,34 @@
+Html:
+<!DOCTYPE HTML>
+<head>
+<title>user Login Using Post method</title>
+</head>
+<body>
+<h1>user Login</h1>
+<form method="post" action="lab7.php">
+<input type="text" name="username" placeholder="Enter username" required><br><br>
+<input type="text" name="password" placeholder="Enter password" required><br><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
+
+Php:
+<?php
+$actual_usn="Vinay";
+$actual_pw="Vinay123";
+$usn=$_POST['username'];
+$pw=$_POST['password'];
+if(isset($usn)&&isset($pw))
+{
+if(strcmp($usn,$actual_usn)===0 && strcmp($pw,$actual_pw)==0){
+echo "Login Successful<br> welcome,$usn!";
+}
+else{
+echo "Invalid username or password please try again";
+}
+}
+else{
+echo "Login unsuccessful";
+}
+?>
