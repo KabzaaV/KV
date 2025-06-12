@@ -1,0 +1,20 @@
+Html:
+<html>
+<body>
+<h3>Form Handling using form</h3>
+<form method="get" action="lab6.php">
+<input type="text" name="name" placeholder="Enter name"><br>
+<input type="email" name="email" placeholder="Enter email"><br>
+<input type="submit">
+</form>
+</body>
+</html>
+
+Php:
+<?php
+$name=$_GET["name"];
+$email=$_GET["email"];
+echo "<h4>Form Submitted</h4><br>";
+echo "Name:$name<br>";
+echo "Email:$email<br>";
+?>
