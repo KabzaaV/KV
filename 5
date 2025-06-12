@@ -1,0 +1,27 @@
+<?php
+class car{
+private $model;
+
+//constructor
+public function __construct($model){
+$this->model=$model;
+echo "A new $this->model car is created.<br>";
+}
+
+//method to drive the car 
+public function drive(){
+echo "The $this->model is driving.<br>";
+}
+
+//Destructor
+public function __destruct(){
+echo "The $this->model car is being destroyed.<br>";
+}
+}
+//create a new car object
+$myCar=new Car("Toyata");
+
+//use the car
+$myCar->drive();
+
+?>
