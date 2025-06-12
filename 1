@@ -1,0 +1,22 @@
+Html:
+<html>
+<body>
+<form method="post" action="lab1.php">
+<input type="number" name="n1" placeholder="enter first number">
+<input type="number" name="n2"placeholder="enter second number">
+<input type="submit">
+</form>
+</body>
+</html>
+
+Php:
+<?php
+$n1=$_POST["n1"];
+$n2=$_POST["n2"];
+$temp=0;
+$temp=$n1;
+$n1=$n2;
+$n2=$temp;
+echo "n1:$n1<br>";
+echo "n2:$n2<br>";
+?>
