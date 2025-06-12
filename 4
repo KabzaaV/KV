@@ -1,0 +1,25 @@
+Html:
+<html>
+<body>
+<form method="post" action="lab4.php">
+<input type="number" name="n1" placeholder="enter first number">
+<input type="submit">
+</form>
+</body>
+</html>
+
+
+Php:
+<?php
+function fib($n){
+if($n<2){
+return $n;
+}
+return fib($n-1)+fib($n-2);
+}
+$n=$_POST["n1"];
+echo "Fibonacci Series:<br>";
+for($i=0;$i<$n;$i++){
+echo fib($i)."<br>";
+}
+?>
